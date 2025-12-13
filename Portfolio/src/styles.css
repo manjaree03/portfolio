@@ -1,0 +1,755 @@
+/* Global reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+}
+
+/* nav-bar */
+.navbar {
+    display: flex;
+    height: 57px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-grow: 1;
+    top: 0;
+    background: rgba(255, 255, 255, 0.0); /* Transparent background */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+.home-page .navbar {
+    background: rgba(255, 255, 255, 0.0); /* Transparent background */
+}
+
+
+.projects-page .navbar,
+.details-page .navbar,
+.skills-page .navbar {
+      background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow with elevation effect */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: rgb(233, 210, 214);
+}
+
+.navbar .left {
+    font-size: 18px;
+    font-weight: lighter;
+}
+.navbar .left img{
+    margin-top:60px;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.menubar {
+
+    height: auto;
+
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.0); /* Transparent background */
+    color: white;
+    padding: 10px 0px;
+    z-index: 1000;
+    margin-left: 0%;
+    margin-bottom: 30px;
+
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.menu-item{
+    margin-left: 0%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /
+}
+
+.menubar a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Adding transition for smooth fade effect */
+
+}
+
+
+
+.menu-item.active {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    height: 35px;
+    width: auto;
+    text-align: center;
+    color: rgb(233, 210, 214);
+    text-decoration: none; /* Removes underline from the link */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover{
+    background-color: rgb(233, 210, 214); /* Changes background color on hover */
+    color: white; /* Changes text color on hover */
+    transform: translateY(-3px); /* Adds a lift effect on hover */
+}
+
+
+
+
+.menubar  .allProjects{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.menubar  .androidApp{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+.menubar  .iosApp{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.menubar  .webApp{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+.menubar  .webSites{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+.menubar  .windowApp{
+    outline: none; /* Remove default focus outline */
+    background-color: rgb(233, 210, 214);
+    border: 2px solid  rgb(118, 126, 85);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Container for the cards */
+.flex {
+    display: flex;
+    flex-direction: column;   /* important if stacking vertically */
+    width: 100%;
+    min-height: 100vh;   /* start full screen */
+    height: auto;
+    justify-content: left;
+    background-image: url('res/BG.jpeg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;/* Center the background image */
+}
+
+
+.flex-data {
+    margin-left: 8%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    text-align: start;
+    height: auto;
+    width: auto;
+    max-width: 650px;
+    color: white;
+    margin-top:10%;
+    margin-bottom:2%;
+    border:0px solid red;
+}
+
+.home-page .title {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.home-page .name {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.home-page .description {
+    font-size: 17px;
+    line-height: 1.22;
+    text-align: left;
+    margin-bottom: 20px;
+    height: auto;
+
+}
+#description_skill
+{
+    color: #ac7a83;
+}
+
+.home-page .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.home-page .tech-item {
+    flex: 1 1 calc(50% - 16px); /* This ensures two items per row */
+    margin-bottom: 8px;
+}
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    height: 45px;
+    width: auto;
+    text-align: center;
+    color: rgb(152, 75, 86);
+    text-decoration: none; /* Removes underline from the link */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: rgb(233, 210, 214); /* Changes background color on hover */
+    color: white; /* Changes text color on hover */
+    transform: translateY(-3px); /* Adds a lift effect on hover */
+}
+
+
+.detail-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.detail-card{
+    z-index: 2; /* Ensure content is above the overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-evenly;
+    text-align: start;
+    width: 500px;
+    flex-grow: 1;
+    /* min-height: 100vh; */
+    color: rgb(161, 159, 159);
+    background: rgb(230, 230, 230);
+    height: auto;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition for scaling and background color */
+}
+
+.detail-card:hover{
+    transform: scale(1.03);
+    background: rgb(43, 42, 42);
+}
+
+.detail-flex .card-img-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    /* padding: 50px; */
+    flex-grow: 1;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;/* Ensure the image doesn't exceed half the container width */
+    object-fit: cover; /* Cover the available space while maintaining aspect ratio */
+    border-radius: 10px; /* Match the card's border radius if desired */
+
+}
+
+
+
+.details-page .title {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: left; /* Ensures the text is left-aligned */
+    font-weight: 500;
+}
+
+.details-page .name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    color: rgb(25, 163, 55);;
+}
+
+.details-page .description {
+    font-size: 15px;
+    line-height: 1.22;
+    text-align: center;
+}
+.details-page .tag {
+    font-size: 17px;
+    line-height: 1.22;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(118, 126, 85);
+}
+
+.details-page .technologies {
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.04;
+}
+
+.details-page .tech-item {
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.content-box {
+    background: rgb(231, 229, 229);
+    padding: 40px;
+}
+
+.projects-page .content-box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+/* section styles */
+.home-page .section {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+/* section styles */
+.skills-page .section,
+.details-page .section,
+.projects-page .section {
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.details-page .section-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(118, 126, 85);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.section-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Enable wrapping of content */
+    overflow: hidden; /* Ensure content stays within the container */
+    margin: 50px;
+    border-radius: 10px;
+    row-gap: 1px;
+}
+
+.section-image .card-img-top{
+    margin: 50px;
+    width: auto;
+    max-width: 600px;
+    max-height: 600px;
+    height: auto;
+
+}
+
+.section-video{
+    margin: 50px;
+    height: 100vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.section-title {
+    color: rgb(25, 163, 55);
+    line-height: 2;
+}
+
+.section-description {
+    color: rgb(137, 143, 137);
+}
+
+/* Card Styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px; /* Add space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.home-page .card {
+    position: relative;
+    background: white;
+    transition: 0.3s;
+    border-radius: 10px; /* Apply rounded corners to the card */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 500px; /* Set maximum card width */
+    height: auto; /* Allow card height to adjust based on content */
+    margin: 0; /* Remove any margin */
+    padding: 16px; /* Add padding to the card content */
+    position: relative;
+}
+
+.home-page .card-subtitle{
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    color: #8d8b8b;
+    font-weight: 100px;
+    font-size: 0.80rem;
+    overflow: hidden;
+}
+
+.home-page .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.projects-page .card {
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 10px; /* Apply rounded corners to the card */
+    overflow: hidden; /* This is for the hover effect */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 500px; /* Set maximum card width */
+    height: auto; /* Allow card height to adjust based on content */
+    margin: 0; /* Remove any margin */
+    padding: 16px; /* Add padding to the card content */
+}
+
+/* Title Styles */
+.home-page .card-title {
+    margin-top: 20px; /* Add 20px margin from the top */
+    margin-bottom: 10px;
+    font-size: 1.04rem; /* Increase title size */
+    font-weight: normal;
+    color: black; /* Set title color to black */
+}
+
+.projects-page .card-title{
+    margin-top: 5px; /* Add 20px margin from the top */
+    margin-bottom: 5px;
+    font-size: 1.04rem; /* Increase title size */
+    font-weight: normal;
+    color: black; /* Set title color to black */
+}
+
+
+.projects-page .card-img-top:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.card-Year{
+    margin-top: 5px; /* Add 20px margin from the top */
+    font-size: 1.04rem; /* Increase title size */
+    font-weight: normal;
+    color: #9ca3ad;
+}
+
+
+.projects-page .card-subtitle{
+    color: #8d8b8b; /* Set subtitle color to #9ca3ad */
+    font-weight: 100px;
+    line-height: 1.4;
+    overflow: hidden;
+    font-size: 0.80rem;
+    height: 90px;
+}
+
+
+/* Image Styles */
+.card-img-top {
+    width: 100%;  /* Maintains image width relative to card */
+    height: 200px;  /* Fixed image height */
+    object-fit: cover; /* Scales image to cover container proportionally */
+    margin: 0; /* Removes any margin from the image */
+    border-radius: 5px; /* Add rounded corners to the image */
+}
+
+.card-body {
+    text-align: left; /* Left-align all text within the card body */
+}
+
+.skills-page .card-container{
+    margin-top: 60px;
+}
+.skills-page .skill {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 10px; /* Apply rounded corners to the card */
+    overflow: hidden; /* This is for the hover effect */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 500px; /* Set maximum card width */
+    height: auto; /* Allow card height to adjust based on content */
+    margin: 0; /* Remove any margin */
+    padding: 20px; /* Add padding to the card content */
+    border: 1px solid #8a8888; /* Add a border with color #ccc */
+}
+
+.skills-page .card-img-top{
+    width: 60px;
+    height: 60px;
+}
+
+.skills-page .card-title {
+    margin-top: 20px; /* Add 20px margin from the top */
+    margin-bottom: 10px;
+    font-size: 1.04rem; /* Increase title size */
+    font-weight: normal;
+    color: black; /* Set title color to black */
+}
+
+.skills-page .card-subtitle {
+    color: #8d8b8b; /* Set subtitle color to #9ca3ad */
+    font-weight: 100px;
+    height: 150px;
+    overflow: hidden;
+    line-height: 1.2;
+    font-size: 0.80rem;
+}
+
+.skills-page .card-bottomTitle {
+    color: #9e9d9d;; /* Set subtitle color to #9ca3ad */
+    font-weight: 100;
+    line-height: 1.2;
+    margin-top: 25px;
+    font-size: 0.70rem;
+}
+
+
+
+.tile {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 10px; /* Apply rounded corners to the card */
+    overflow: hidden; /* This is for the hover effect */
+    width: 100%; /* Ensure card takes full width of grid item */
+    max-width: 500px; /* Set maximum card width */
+    height: auto; /* Allow card height to adjust based on content */
+    margin: 0; /* Remove any margin */
+    padding: 16px; /* Add padding to the card content */
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.tile-title {
+    color: rgb(63, 177, 63);
+    font-size: 0.8rem;
+}
+
+.tile-subtitle {
+    margin-bottom: 30px;
+}
+
+.tile-description {
+    color: #757474; /* Set subtitle color to #9ca3ad */
+    font-weight: lighter;
+    line-height: 1.3;
+}
+
+.footer {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background-color: #e0dede;
+    width: 100%;
+    height: 210px;
+
+}
+
+.footer-social {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust spacing between icons */
+}
+
+.icon {
+    width: 24px; /* Adjust size of the icons */
+    height: 24px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+.icon a:hover img {
+    opacity: 0.8; /* Slight fade effect on hover */
+}
+
+.footer-copyright {
+    color: #9ca3ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #c7c3c3;
+}
+
+.bounceBtn {
+    animation: pulse 1s infinite;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+    margin-top: 50px;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+.indicator {
+    display: inline-block;
+    width: 8px;
+    margin-left: 10px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(161, 158, 158); /* Default color */
+}
+
+.indicator.live {
+    background-color: green; /* Color when the project is live */
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    color: #0c0c0c;
+    font-size: 15px;
+}
+
+
+
+.star-icon {
+    position: absolute;
+    top: -15px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+}
+
+.star-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
