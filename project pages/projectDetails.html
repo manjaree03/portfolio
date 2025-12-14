@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- PNG icons for various sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../res/fab_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../res/fab_icon.png">
+</head>
+<body class="details-page">
+    <div class="navbar">
+        <div class="left">Manjaree Agrawal</div>
+        <div class="right">
+            <a href="../index.html">Home</a>
+            <a href="allProjects.html">Projects</a>
+            <a href="../skill pages/skills.html">Skills</a>
+        </div>
+    </div>
+    
+    <div class="content-box">
+        <div class="detail-flex">
+            <div class="detail-card">
+                <p class="title" id="project-year">Github : 2024</p>
+                <p class="name" id="project-name">Gitly</p>
+                <p class="description" id="project-description" style="text-align: left;">
+                    This Project Built to Learn SwiftUI on IOS, Macos Apps and the Usage in this project for Apollo Client and GraphQL available only in IOS Apps, This Project has a Download Schema, Generate and build Dynamic GraphQL Queries
+                </p>
+                <h3 class="tag">Project Tags</h3>
+                <div class="technologies" id="project-tags">
+                    <div class="tech-item">Android - Kotlin</div>
+                </div>
+               
+                <a href="https://github.com/your-repository" id="link-text"  target="_blank" class="button" style="margin-left: 0%; height: 35px;">
+                    <span  class="goto-link">Go to GitHub</span>
+                    <span id="live-indicator" class="indicator"></span>
+                </a>
+
+            </div>
+            <div class="detail-mockup" id="project-thumbnail-container">
+                <!-- Project thumbnail mockup is rendered by `script.js` -->
+            </div>
+        </div>
+
+        <div class="mockup-toolbar" aria-label="Mockup style selector">
+            <label for="mockup-style" class="mockup-toolbar__label">Mockup style</label>
+            <select id="mockup-style" class="mockup-toolbar__select">
+                <option value="laptop-minimal" selected>Laptop</option>
+                <option value="browser">Browser</option>
+            </select>
+        </div>
+
+        <h3 class="section-title" id="image-title">Project Images</h3>
+        <div class="section-image" id="project-images">
+            <!-- Images are populated by `script.js` as laptop mockups -->
+        </div>
+
+        <h3 class="section-title"  id="video-title">Project Videos</h3>
+        <div class="section-video" id="project-videos">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ly36kn0ug4k?si=eGj2vR6dsyNDU1Ui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-social">
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/akash-singh-6aa44124a/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/AkashSingh1505" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://leetcode.com/u/Akash1501/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Icon">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akashsinghofficial15@gmail.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon" width="40" height="40">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/imaakuuu?igsh=NnJobjF2czNkdTB6" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon" width="40" height="40">
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="footer-copyright">
+            <p>Akash Singh (V 1.0.0) - Copyright @ 2021 Personal Website</p>
+            <p>Website is Open Source (Website Url)</p>
+        </div>
+    </div>
+    <script  src="../script.js"></script>
+</body>
+</html>
