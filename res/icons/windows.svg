@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Windows">
+  <rect width="64" height="64" rx="14" fill="#111827"/>
+  <path d="M14 18l20-4v20H14V18z" fill="#60a5fa"/>
+  <path d="M36 14l14-3v23H36V14z" fill="#3b82f6"/>
+  <path d="M14 36h20v20l-20-4V36z" fill="#93c5fd"/>
+  <path d="M36 36h14v17l-14-3V36z" fill="#60a5fa"/>
+  <text x="32" y="58" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="rgba(255,255,255,0.92)">Windows</text>
+</svg>
+
