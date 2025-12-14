@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="VS Code">
-  <rect width="64" height="64" rx="14" fill="#0078d4"/>
-  <path d="M44 16l8 4v24l-8 4-18-16 18-16z" fill="rgba(255,255,255,0.92)"/>
-  <path d="M12 24l8-8 18 16-18 16-8-8 8-8-8-8z" fill="rgba(255,255,255,0.75)"/>
-  <text x="32" y="58" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="rgba(255,255,255,0.92)">VS Code</text>
-</svg>
-
