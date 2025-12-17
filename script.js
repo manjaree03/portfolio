@@ -7,7 +7,7 @@ const projects = [
         "thumbnail": "../res/youtube_proj.png",
         "category": "windowApp",
         "tags": ["Java", "DSA", "Theory", "Logic Building"],
-        "link": "https://github.com/AkashSingh1505/ACash-Bank-Software",
+        "link": "https://github.com/manjaree03/youtube",
         "images": [
             "../res/youtube_1.png",
             "../res/youtube_2.png",
@@ -18,7 +18,7 @@ const projects = [
         ],
         "videos": [
             {
-                "url": "https://www.youtube.com/@manjaree_agrawal",
+                "url": "https://github.com/user-attachments/assets/4570569a-dc6c-42e6-823e-266de82f276c",
                 "mute": true,
                 "loop": true,
                 "autoPlay": true
@@ -785,6 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
 
