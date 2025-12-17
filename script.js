@@ -9,12 +9,11 @@ const projects = [
         "tags": ["Java", "DSA", "Theory", "Logic Building"],
         "link": "https://github.com/AkashSingh1505/ACash-Bank-Software",
         "images": [
-            "../res/bank_sc1.png",
-            "../res/bank_sc2.png",
-            "../res/bank_sc3.png",
-            "../res/bank_sc4.png",
-            "../res/bank_sc4.png",
-            "../res/bank_sc6.png",
+            "../res/youtube_1.png",
+            "../res/youtube_2.png",
+            "../res/youtube_3.png",
+            "../res/youtube_4.png",
+            "../res/youtube_5.png"
 
         ],
         "videos": [
@@ -786,5 +785,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
