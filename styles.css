@@ -1407,14 +1407,18 @@ html, body {
     padding: 16px; /* Add padding to the card content */
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
+.tile:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* subtle emphasis */
+}
 
 .tile-title {
     color: var(--theme-strong);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .tile-subtitle {
-    margin-bottom: 30px;
+    margin-top:5px;
+    margin-bottom: 15px;
 }
 
 .tile-description {
