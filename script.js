@@ -1,20 +1,19 @@
 const projects = [
     {
         "id": 1,
-        "projectYear": 2024,
+        "projectYear": 2025,
         "name": "Youtube Channel - DSA tutorial",
-        "description": "YouTube channel where I teach Java-based DSA concepts to strengthen foundational understanding.",
+        "description": "A self-initiated YouTube channel teaching Java DSA using visual, play-based methods to build strong conceptual understanding and interview-ready fundamentals.",
         "thumbnail": "../res/youtube_proj.png",
         "category": "windowApp",
-        "tags": ["Java", "DSA", "Theory", "Logic Building"],
-        "link": "https://github.com/manjaree03/youtube",
+        "tags": ["Java", "Data Structures & Algorithms", "Logical Thinking", "Teaching & Communication", "Visual / Play-Based Learning"],
+        "link": "https://www.youtube.com/@manjaree_agrawal",
         "images": [
             "../res/youtube_1.png",
             "../res/youtube_2.png",
             "../res/youtube_3.png",
             "../res/youtube_4.png",
             "../res/youtube_5.png"
-
         ],
         "videos": [
             {
@@ -30,18 +29,18 @@ const projects = [
         "id": 3,
         "projectYear": 2023,
         "name": "Background Location Service with Activity Recognition",
-        "description": "A powerful Android library providing seamless background location services with dynamic interval adjustments based on user activities like 'Still,' 'Walk,' 'Run,' and 'Vehicle,' optimizing performance and battery usage. This Android library is designed for developers seeking reliable background operation and flexible configuration.",
-        "thumbnail": "../res/locationService_thumbnail.png",
-        "category": "android",
-        "tags": ["Android Library", "Background Service", "Activity Recognition", "Location Service"],
-        "link": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF",
+        "description": "A Java SpringBoot REST API system that collects and monitors mobile location data, detects activity states, and visualizes user movement on an admin dashboard via Google Maps API.",
+        "thumbnail": "../res/location_proj_1.png",
+        "category": "website",
+        "tags": ["Java", "Spring boot", "Mysql", "REST API", "Location Tracking", "Activity Detection", "Admin Dashboard", "Google Maps API"],
+        "link": "https://github.com/manjaree03/location-tracking-feature",
         "images": [
-            "../res/location_sc2.png",
-            "../res/location_sc1.png",
+            "../res/location_proj_1.png",
+            "../res/location_proj_2.png",
         ],
         "videos": [
             {
-                "url": "https://github.com/AkashSingh1505/Location_BG_service_with_ARF/assets/139606462/2d0c38f2-390f-452a-8351-c39993185245",
+                "url": "https://github.com/user-attachments/assets/feed2f4b-7a00-46f4-8f0b-9f918ad74c82",
                 "mute": true,
                 "loop": true,
                 "autoPlay": true
@@ -59,19 +58,16 @@ const projects = [
         "tags": ["Java", "HTML", "CSS", "MySQL", "Javascript"],
         "link": "https://github.com/manjaree03/Manjaree-E-commerce-Website",
         "images": [
-            "../res/atm_sc1.png",
-            "../res/atm_sc2.png",
-            "../res/atm_sc3.png"
+            "../res/shopping_1.jpeg",
+            "../res/shopping_2.jpeg",
+            "../res/shopping_3.jpeg",
+            "../res/shopping_4.jpeg",
+            "../res/shopping_5.jpeg",
+            "../res/shopping_6.jpeg",
+            "../res/shopping_7.jpeg"
 
         ],
-        "videos": [
-            {
-                "url": "https://github.com/AkashSingh1505/ACash-Bank-Software/assets/139606462/1d567e9b-9b48-4188-91e2-b9cc41ef5149",
-                "mute": true,
-                "loop": true,
-                "autoPlay": true
-            }
-        ]
+        "videos": null
     },
 
     {
@@ -84,9 +80,9 @@ const projects = [
         "tags": ["Web App","Java", "Html", "CSS", "Javascript", "Thymeleaf", "Bootstrap", "JQuery"],
         "link": "https://github.com/manjaree03/Coffee-Restraunt-Website-Responsive",
         "images": [
-            "../res/excel_sc3.png",
-           "../res/excel_sc1.png",
-           "../res/excel_sc2.png",
+            "../res/coffee_1.jpg",
+           "../res/coffee_2.jpg",
+           "../res/coffee_3.jpg",
 
         ],
         "videos": null
@@ -102,9 +98,17 @@ const projects = [
         "tags": ["Java", "Spring", "Springboot", "Spring Security", "JWT Authentication", "Thymeleaf", "HTML", "CSS", "Javascript", "MySQL"],
         "link": "https://github.com/manjaree03/AKMAadvertisements",
         "images": [
-            "../res/akma_proj.png",
+            "../res/akma_1.png",
+            "../res/akma_2.png"
         ],
-        "videos": null
+        "videos": [
+              {
+                  "url": "https://github.com/user-attachments/assets/bae4894a-d620-4ae0-a8bc-d25c23900918",
+                  "mute": true,
+                  "loop": true,
+                  "autoPlay": true
+              }
+          ]
     },
 
     {
@@ -117,7 +121,9 @@ const projects = [
         "tags": ["HTML", "CSS", "JavaScript", "Responsive Design", "Amazon Clone", "UI Replica"],
         "link": "https://github.com/manjaree03/Fresh-Idea-Entrepreneur/tree/main",
         "images": [
-            "../res/amazon_sc1.png",
+            "../res/freshIdea_1.jpg",
+            "../res/freshIdea_2.jpg",
+            "../res/freshIdea_3.jpg"
         ],
         "videos": null
     },
@@ -130,27 +136,23 @@ const projects = [
         "category": "website",
         "tags": ["Html", "Css", "Javascript", "Responsive"],
         "link": "https://github.com/manjaree03/Newspaper-Headlines-Worldwide",
-        "images": null,
-        "videos": [
-            {
-                "url": "https://github.com/user-attachments/assets/da0e4c2f-cc5a-4c98-bdba-243e1481e181",
-                "mute": true,
-                "loop": true,
-                "autoPlay": true
-            }
-        ]
+        "images": [
+              "../res/news_1.png"
+          ],
+        "videos": null
     },
     {
         "id": 8,
         "projectYear": 2022,
         "name": "HiCare",
-        "description": "HiCare, India's top pest control service provider, needed to digitize their audit process to improve efficiency. I developed a Kotlin-based Android app that transformed their workflow, boosting audit capacity from 1-2 to 10-15 audits per day, leading to an 86% increase in productivity and significantly enhancing client satisfaction.",
-        "thumbnail": "../res/hicare_thumbnail.png",
-        "category": "android",
-        "tags": ["Android - Kotlin", "Best Practices", "Pest Control", "Big Audience"],
+        "description": "HiCare, India's top pest control service, needed to digitize their audit process. I developed a **Java Spring Boot backend** and REST APIs to collect audit data from mobile devices, which was displayed on an admin dashboard. The system boosted audit capacity from 1-2 to 10-15 audits per day, improving productivity by 86% and enhancing client satisfaction.",
+        "thumbnail": "../res/hicare_3.png",
+        "category": "website",
+        "tags": ["Java", "Spring Boot", "REST API", "Hibernate ORM", "MySQL", "Location Tracking", "Audit Report Generation", "Web Services", "Pest Control", "AWS - EC2 instance", "S3 Bucket"],
         "link": "https://play.google.com/store/apps/details?id=com.hicare.audit2",
         "images": [
-            "../res/hicare_sc1.png",
+            "../res/hicare_3.png",
+            "../res/hicare_2.png"
         ],
         "videos": null
     },
@@ -158,15 +160,13 @@ const projects = [
         "id": 9,
         "projectYear": 2022,
         "name": "Static Web Application",
-        "description": "Developed for a client in the healthcare industry, Aarogyahat is a comprehensive Android application built using Kotlin. The platform offers a wide range of services, including health insurance management, medical diagnostics, telemedicine consultations, and wellness programs. Integrated with HealthConnect, Aarogyahat provides personalized health insights and enables users to manage their health effectively.",
+        "description": "Static Web Application designed during my web development training using HTML, CSS, and JavaScript.",
         "thumbnail": "../res/staticweb_proj.png",
         "category": "website",
         "tags": ["html", "css", "javascript"],
         "link": "https://github.com/manjaree03/Static-Web-Application/tree/main",
         "images": [
-            "../res/aarogyahaat_sc1.png",
-            "../res/aarogyahaat_sc2.png",
-            "../res/aarogyahaat_sc3.png",
+            "../res/practice_1.png"
         ],
         "videos": null
     },
@@ -214,7 +214,7 @@ const projects = [
         "projectYear": 2024,
         "name": "Portfolio",
         "description": "To effectively showcase your projects, skills, and achievements, I developed a portfolio website that digitizes and presents your professional journey in a modern, engaging way. This platform is designed to offer a comprehensive view of your work, including detailed project overviews, skill highlights, and notable achievements. Leveraging advanced web technologies, the website ensures a responsive experience and serves as a dynamic tool for potential collaborations and opportunities.",
-        "thumbnail": "../res/portfolio_thumbnail.png",
+        "thumbnail": "../res/portfol_1.png",
         "category": "website",
         "tags": [
             "Portfolio",
@@ -224,9 +224,9 @@ const projects = [
             "JavaScript",
             "Responsive Design"
         ],
-        "link": "https://github.com/AkashSingh1505/portfolio",
+        "link": "https://github.com/manjaree03/portfolio",
         "images": [
-           "../res/portfolio_sc1.png",
+           "../res/portfol_1.png",
            "../res/portfolio_sc2.png",
            "../res/portfolio_sc3.png",
 
@@ -476,6 +476,7 @@ function setLinkText(link) {
     const websiteText = "Visit Website";
     const playStoreText = "Open on Play Store";
     const githubText = "Go to Github";
+    const youtubeText = "My Youtube Channel Link";
 
     // Set the link text
     const linkTextElement = document.getElementById('link-text');
@@ -485,7 +486,12 @@ function setLinkText(link) {
     } else if(link.includes("github.com")) {
         setLiveIndicator(false);
         linkTextElement.textContent = githubText;
-    }else{
+    }
+    else if(link.includes("youtube.com")) {
+            setLiveIndicator(false);
+            linkTextElement.textContent = youtubeText;
+        }
+    else{
         setLiveIndicator(true);
         linkTextElement.textContent = websiteText;
     }
@@ -506,7 +512,10 @@ function setLiveIndicator(isLive){
 function loadHomePage(){
     const container = document.getElementById('feature-project');
     container.innerHTML = '';
-    let filteredProjects = projects.filter(project => project.link.includes("github.com"));
+    let filteredProjects = projects.filter(project =>
+        project.link.includes("github.com") ||
+        project.link.includes("youtube.com")
+    );
     let count = 0;
 
     const normalizeAssetPath = (p) => (p || "").replace(/^\.\.\//, "");
@@ -785,7 +794,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
-
-
 
 
